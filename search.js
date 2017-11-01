@@ -8,9 +8,9 @@ $(document).ready(function(){
         $.ajax(link, {
             method: 'GET',
         }).done(function(res){
-            alert(res);
+             $("#result").html(res);
         }).fail(function(err){
-            alert(err);
+            $("#result").html(err);
         });
      });
  }); 
